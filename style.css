@@ -126,39 +126,38 @@ body{
   /* z-index: 1; */
 
 
-.submenu{  
+.submenu-ul{  
   display: none;
-}
-
-.main-menu:hover .submenu {
-  display: block;
-  position: absolute;
-  background: black;
+  /* z-index: 1000; */
   width: 400px;
   height: 280px;
+  margin-top: 0px;
+  position: absolute;
   border-radius: 25px;
-  /* margin-top: 20px; */
-  z-index: 2;
   margin-left: -40px;
-  
-}
-
-.main-menu:hover .submenu ul{
-  
   text-align: left;
-  padding-top: 20px;
-  z-index: 2;
-  position: relative;
+  background: black;
 }
 
-.main-menu:hover .submenu ul li {
+.submenu-ul li{
   display: block;
+}
+
+.social-li:hover .submenu-ul {
+  display: block;
+}
+
+.submenu-ul li:hover{
+  display: block;
+}
+
+.submenu-ul li{
   padding-top: 10px;
 }
 
 
-.main-menu:hover .submenu ul li a{
-  display: block;
+
+.submenu-ul li a{
   color: gray;
   font-size: 13x;
   font-family: sans-serif;
@@ -224,7 +223,8 @@ body{
     vertical-align: middle;
     height: 20px;
     width: 145px;
-    margin-top: 25px;position: fixed;
+    margin-top: 25px;
+    /* position: fixed; */
     padding-top: 20px;
     margin-left: 20px;
     border-radius: 3px;
